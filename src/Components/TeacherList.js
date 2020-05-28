@@ -5,8 +5,7 @@ import Button from '@material-ui/core/Button';
 import { CardHeader } from '@material-ui/core';
 
 const TeacherList = props => {
-    const allTeachers = props;
-
+    const allTeachers = props.allTeachers;
 
     return (
         allTeachers.map((teacher) => {
@@ -24,7 +23,6 @@ const TeacherList = props => {
             );
         })
     );
-
 }
 
 export default TeacherList;

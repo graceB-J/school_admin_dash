@@ -39,8 +39,7 @@ class NewStudent extends React.Component {
                             <Form.Control as="textarea" rows="1"
                                 value={this.state.emergencycontact}
                                 onChange={this.handleECChange} name="ECname"
-                                maxLength="50" placeholder="EC name" required />
-                            <h3>Phone</h3>
+                                maxLength="50" placeholder="contact name" required />
                             <Form.Control as="textarea" rows="1"
                                 value={this.state.emergencyphone}
                                 onChange={this.handleECphoneChange} name="phone"

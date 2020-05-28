@@ -5,8 +5,8 @@ import Button from '@material-ui/core/Button';
 import { CardHeader } from '@material-ui/core';
 
 const StudentList = props => {
-    const allStudents = props;
-
+    const allStudents = props.allStudents;
+    //console.log(allStudents);
     return (
         allStudents.map((student) => {
             return (

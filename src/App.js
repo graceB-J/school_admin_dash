@@ -105,16 +105,16 @@ class App extends React.Component {
         </header>
 
         <div className="studentlist">
-          Students: <StudentList courses={this.state.students} />
-          <NewStudent> NewStudent handleNewStudent={this.handleNewStudent}</NewStudent>
+          Students: <StudentList allStudents={this.state.students} />
+          <NewStudent>  handleNewStudent={this.handleNewStudent}</NewStudent>
         </div>
         <div className="teacherlist">
-          Teachers: <TeacherList courses={this.state.teachers} />
-          <NewTeacher> NewTeacher handleNewTeacher={this.handleNewTeacher}</NewTeacher>
+          Teachers: <TeacherList allTeachers={this.state.teachers} />
+          <NewTeacher>  handleNewTeacher={this.handleNewTeacher}</NewTeacher>
         </div>
         <div className="courselist">
-          Courses: <CourseList courses={this.state.courses} />
-          <NewCourse> NewCourse handleNewCourse={this.handleNewCourse}</NewCourse>
+          Courses: <CourseList allCourses={this.state.courses} />
+          <NewCourse>  handleNewCourse={this.handleNewCourse}</NewCourse>
         </div>
       </div>
     );

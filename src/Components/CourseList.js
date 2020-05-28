@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button';
 import { CardHeader } from '@material-ui/core';
 
 const CourseList = props => {
-    const allCourses = props;
+    const allCourses = props.allCourses;
 
     return (
         allCourses.map((course) => {

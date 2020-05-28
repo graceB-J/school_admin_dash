@@ -28,8 +28,7 @@ class NewTeacher extends React.Component {
                                 onChange={this.handleNameChange} name="name"
                                 maxLength="50" placeholder="first and last name" required />
                         </Form.Group>
-                        <Button className="Submit" onClick={() =>
-                            this.props.handleNewTeacher(this.state)}>
+                        <Button className="Submit" onClick={() => this.props.handleNewTeacher(this.state)}>
                             Submit
                             </Button>
                     </Form>
