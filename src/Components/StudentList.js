@@ -15,7 +15,8 @@ const StudentList = props => {
                         <CardHeader title={student.name} subheader={"enrolled in: " + student.courses}> </CardHeader>
                         <CardContent>
                             <div className="info">
-                                Emergency Contact: {student.emergencyContact}
+                                Emergency Contact: {student.emergencycontact}
+                                Emergency Phone: {student.emergencyphone}
                             </div>
                         </CardContent>
                     </Card>

@@ -18,22 +18,20 @@ class NewTeacher extends React.Component {
 
     render() {
         return (
-            <div className="SelectionAreaBox">
-                <div className="form">
-                    <Form>
-                        <Form.Group controlId="comments">
-                            <h3>New Teacher Name</h3>
-                            <Form.Control as="textarea" rows="1"
-                                value={this.state.name}
-                                onChange={this.handleNameChange} name="name"
-                                maxLength="50" placeholder="first and last name" required />
-                        </Form.Group>
-                        <Button className="Submit" onClick={() => this.props.handleNewTeacher(this.state)}>
-                            Submit
+            <div className="form">
+                <Form>
+                    <Form.Group controlId="comments">
+                        <h3>New Teacher Name</h3>
+                        <Form.Control as="textarea" rows="1"
+                            value={this.state.name}
+                            onChange={this.handleNameChange} name="name"
+                            maxLength="50" placeholder="first and last name" required />
+                    </Form.Group>
+                    <Button className="Submit" onClick={() => this.props.handleNewTeacher(this.state)}>
+                        Submit
                             </Button>
-                    </Form>
-                </div>
-            </div >
+                </Form>
+            </div>
         );
     }
 }
