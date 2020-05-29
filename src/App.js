@@ -80,11 +80,9 @@ class App extends React.Component {
       teachers: e.teachers,
       students: e.students,
     }
-
+    // const teacherRef = firebase.database().ref(`teachers/${teachers.id}`);
+    // teacherRef.push(item);
     itemsRef.push(item);
-    this.setState(prevState => {
-      return { courses: [...prevState.courses, item] }
-    });
   }
   handleNewStudent = (e) => {
     const itemsRef = firebase.database().ref('students');
@@ -94,9 +92,6 @@ class App extends React.Component {
       emergencyphone: e.emergencyphone,
     }
     itemsRef.push(item);
-    this.setState(prevState => {
-      return { students: [...prevState.students, item] }
-    });
   }
   handleNewTeacher = (e) => {
     const itemsRef = firebase.database().ref('teachers');
@@ -107,9 +102,6 @@ class App extends React.Component {
       courses: e.courses
     }
     itemsRef.push(item);
-    this.setState(prevState => {
-      return { teachers: [...prevState.teachers, item] }
-    });
   }
 
   assignTeacher = (coursename, teachername) => {
