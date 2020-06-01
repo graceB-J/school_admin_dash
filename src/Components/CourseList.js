@@ -28,7 +28,7 @@ const CourseList = props => {
                         {/* <Button size="small"> Add Teacher </Button> */}
                         <Form>
                             <InputLabel id="addteacher">Teacher Name</InputLabel>
-                            <Select labelId="teacherlabel" value={allTeachers.teacher} onChange={handleChange}>
+                            {/* <Select labelId="teacherlabel" value={allTeachers.teacher} onChange={handleChange}>
                                 {allTeachers.map((teacher) => (
                                     <MenuItem key={teacher.name} value={teacher.name}>
                                         {teacher.name}
@@ -37,7 +37,7 @@ const CourseList = props => {
                             </Select>
                             <Button className="Submit" onClick={() => { props.assignTeacher(course.name, teachername) }}>
                                 Confirm
-                            </Button>
+                            </Button> */}
                         </Form>
                         <CardContent>
                             <div className="students">
