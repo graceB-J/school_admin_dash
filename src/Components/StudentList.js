@@ -11,10 +11,13 @@ const StudentList = props => {
             return (
                 <div className='students'>
                     <Card className='student'>
-                        <CardHeader title={student.name} subheader={"enrolled in: " + student.courses}> </CardHeader>
+                        {/* <CardHeader title={student.name} subheader={"enrolled in: " + student.courses}> </CardHeader> */}
+                        <CardHeader title={student.name}> </CardHeader>
                         <CardContent>
                             <div className="info">
                                 Emergency Contact: {student.emergencycontact}
+                            </div>
+                            <div>
                                 Emergency Phone: {student.emergencyphone}
                             </div>
                         </CardContent>

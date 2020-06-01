@@ -12,7 +12,8 @@ const TeacherList = props => {
             return (
                 <div className='teachers'>
                     <Card className='teacher'>
-                        <CardHeader title={teacher.name} subheader={"teaches: " + teacher.courses}> </CardHeader>
+                        {/* <CardHeader title={teacher.name} subheader={"teaches: " + teacher.courses}> </CardHeader> */}
+                        <CardHeader title={teacher.name}> </CardHeader>
                         <CardContent>
                             <div className="students">
                                 {teacher.students}
